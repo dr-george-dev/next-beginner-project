@@ -1,9 +1,14 @@
 import Link from 'next/link'
 import React from 'react'
 import LogoutButton from './LogoutButton';
+import { getSession } from '../_lib/session';
+import { logoutAction } from '../actions/auth';
 
-const Navbar = () => {
-    const session = false;
+const Navbar = async () => {
+    const session = await getSession(); // Assume getSession is a function that retrieves the current user session
+    const handleLogout = async () => {
+        await logoutAction();
+    };
   return (
     <nav className='bg-white shadow-sm'>
         <div className="container mx-auto p-4 flex justify-between items-center">
