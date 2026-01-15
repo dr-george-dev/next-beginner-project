@@ -10,7 +10,7 @@ type ContactFormProps = {
 const ContactForm = ({action, contact}: ContactFormProps) => {
   return (
     <div>
-      
+      Contact Form
     </div>
   )
 }

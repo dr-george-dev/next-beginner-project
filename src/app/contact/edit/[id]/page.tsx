@@ -7,6 +7,7 @@ const EditConatctPage = async ({ params }: { params: Promise<{ id: string}>;
  }) => {
   const {id} = await params;
   const contact = await getContactById(id);
+  console.log("The contact to edit is:", contact)
   return (
     <div className="max-w-md mt-6 mx-auto p-6 bg-white rounded-md shadow-md">
       <h1 className="text-2xl fontbold mb-6">Edit Contact</h1>
