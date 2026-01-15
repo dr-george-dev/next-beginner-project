@@ -19,7 +19,7 @@ const ContactPage = async () => {
   console.log("contacts list :", contacts);
   if (!contacts || contacts.length === 0) {
     return (
-      <div className="">
+      <div className="container mx-auto p-4">
         Please {""}{" "}
         <a href="/contact/new" className="text-blue-600 hover:underline">
           Add a contact
