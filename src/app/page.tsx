@@ -2,10 +2,25 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-     <main>
-      
-     </main>
+    <div className="flex flex-col items-center justify-center min-h-screen p-8 pb-5 sm:p-20 font-(family-name:--font-geist-sans)">
+      <div className="text-center">
+        <h1 className="text-4xt font-bold">Welcome to Contact Manager</h1>
+        <p className="mt-2 text-lg text-gray-600">
+          Manage your contacts efficiently and effortlessly.
+        </p>
+      </div>  
+      <Image
+        src="/contacts.jpg"
+        alt="contact manager"
+        width={300}
+        height={300}
+        className="rounded-lg shadow-lg"
+      />
+      <div className="text-center">
+        <p className="mt-2 text-lg text-gray-600">
+          start managing your contacts now!
+        </p>
+      </div>
     </div>
   );
 }
