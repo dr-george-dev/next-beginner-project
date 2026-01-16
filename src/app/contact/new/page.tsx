@@ -2,6 +2,7 @@ import ContactForm from "@/app/_components/ContactForm";
 import { createContactAction } from "@/app/actions/contact";
 import React from "react";
 
+
 const NewConatactPage = () => {
   return (
     <div className="max-w-md mt-6 mx-auto p-6 bg-white rounded-md shadow-md">

@@ -10,7 +10,19 @@
       "id": "7bf2",
       "name": "george",
       "email": "george@gmail.com",
-      "usreId": "1"
+      "userId": "1"
+    },
+    {
+      "id": "0f0d",
+      "name": "secondContact",
+      "email": "secondcontact@gmail.com",
+      "userId": "1"
+    },
+    {
+      "id": "3112",
+      "name": "contact2",
+      "email": "contact2@gmail.com",
+      "userId": "2"
     }
   ],
   "users": [
@@ -18,6 +30,12 @@
       "id": "1",
       "username": "user1",
       "email": "user1@gmail.com",
+      "password": "admin"
+    },
+    {
+      "id": "2",
+      "username": "user2",
+      "email": "user2@gmail.com",
       "password": "admin"
     }
   ]

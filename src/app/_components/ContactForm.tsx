@@ -1,7 +1,8 @@
 "use client";
 import React, { useActionState, useEffect } from "react";
 import { ContactType } from "../_types/contact";
-import { Router, useRouter } from "next/router";
+import { Router } from "next/router";
+import { useRouter } from "next/navigation";
 
 type ContactFormProps = {
   action: (prevState: any, formData: FormData) => Promise<any>;

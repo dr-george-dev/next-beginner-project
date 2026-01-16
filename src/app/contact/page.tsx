@@ -15,7 +15,7 @@ const ContactPage = async () => {
       </div>
     );
   }
-  const contacts = await getContacts(user?.id);
+  const contacts = await getContacts(user.id);
   console.log("contacts list :", contacts);
   if (!contacts || contacts.length === 0) {
     return (
