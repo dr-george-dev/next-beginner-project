@@ -20,7 +20,7 @@ export const craeteContact = async (contact: ContactType) => {
 };
 
 export const updateContact = async (id: string, contact: ContactType) => {
-    const response = await axios.post(`${API_URL}/contacts/&{id}`, contact);
+    const response = await axios.put(`${API_URL}/contacts/${id}`, contact);
     return response.data;
 };
 
